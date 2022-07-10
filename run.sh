@@ -1,4 +1,4 @@
 #!/bin/bash
-export POSTGRES_URL="postgres://khangdx:abcd1234@localhost:5432/test"
+export POSTGRES_URI="postgresql://khangdx:abcd1234@localhost:5432/test"
 
-python server.py
+uvicorn server:app --reload

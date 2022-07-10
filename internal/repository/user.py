@@ -1,7 +1,8 @@
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, Session
 
 from internal.repository.base import Base
+from typing import Optional, List
 
 
 class User(Base):
