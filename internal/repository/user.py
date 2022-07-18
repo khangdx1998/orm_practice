@@ -14,3 +14,6 @@ class User(Base):
     is_active = Column(Boolean, default=True)
 
     items = relationship("Item", back_populates="owner")
+
+    def __str__(self):
+        return f'id: {self.id} ,email: {self.email}, hashed_password: {self.hashed_password}, is_active: {self.is_active}'
